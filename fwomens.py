@@ -79,12 +79,11 @@ devment = """
 """
 
 choicing = """
-•-----------
-|
-|
-|
-|
-•______
+[1] Open Source Intellegence
+[2] DDoS Attack(in developing)
+[3] DoS Attack(IN DEVELOPING)
+[4] Password Attack
+[5] Web Hacking
 """
 def secret():
     os.system("python3 tools/osint.py")

@@ -2,6 +2,7 @@ import pystyle
 from pystyle import Colors, Colorate, Center
 from ipwhois import IPWhois
 import requests
+import webbrowser
 
 banner = """XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -55,7 +56,8 @@ XX   MMMMMMMMMMMMMMMMMMss.           ....           .ssMMMMMMMMMMMMMMMMMM   XX
 XX   MMMMMMMMMMMMMMMMMMMMNo         oNNNNo         oNMMMMMMMMMMMMMMMMMMMM   XX
 XX                                                                          XX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"""
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+"""
 fuckosint = """
  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .-----------------. .----------------. 
 | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
@@ -70,18 +72,26 @@ fuckosint = """
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
 """
 choicing = """
-*-----* 
-|  1  | IP Analyze
-*_____*
+.---.
+| 1 | IP Analyze
+'---'
 
-*-----*
-|  2  | Number Analyze
-*_____*
+.---.  
+| 2 | Number Analyze
+'---'
 
-*-----*
-|  3  | Telegram Analyze
-*_____*
+.---.  
+| 3 | Telegram Analyze.
+'---'
+
+.---.    
+| 4 | Image Analyze.              
+'---'
 """
+
+def imageanalyze():
+    imageurlosint = "https://search4faces.com/"
+    webbrowser.open(imageurlosint)
 
 
 def ipanalyze(ip):
@@ -120,6 +130,12 @@ def main():
                     print(f"{key}: {value}")
             else:
                 print(data)
+    elif choice == "2":
+        print("In developing")
+    elif choice == "3":
+        print("In developing")
+    elif choice == "4": 
+        imageanalyze()
 
 if __name__ == "__main__":
     main()
